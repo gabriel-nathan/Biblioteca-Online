@@ -1,0 +1,18 @@
+CREATE TABLE categorias (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE autores (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE livros (
+    id SERIAL PRIMARY KEY,
+    titulo VARCHAR(255) NOT NULL,
+    autor_id INTEGER NOT NULL,
+    categoria_id INTEGER NOT NULL,
+    FOREIGN KEY (autor_id) REFERENCES autores(id),
+    FOREIGN KEY (categoria_id) REFERENCES categorias(id)
+);

@@ -1,0 +1,212 @@
+/* Reset básico */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Fredoka, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    background:#175c5c;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo {
+    padding: 1rem;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+#home {
+    background: #f5ffee;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#pesquisa {
+    margin-bottom: 2rem;
+}
+
+#pesquisa form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#pesquisa input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+}
+
+#pesquisa button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#pesquisa button:hover {
+    background-color: #555;
+}
+
+.book-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.book-gallery figure {
+    width: 150px;
+    transition: transform 0.3s;
+}
+
+.book-gallery figure:hover {
+    transform: scale(1.1);
+}
+
+.book-gallery img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.book-gallery figcaption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+footer {
+    background: #175c5c;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.logo img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.logo img:first-child {
+    left: 20px; /* Ajuste conforme necessário */
+}
+.logo img:last-child {
+    right: 20px; /* Ajuste conforme necessário */
+}
+.logo h1 {
+    margin: 0;
+    font-size: 68px;
+    z-index: 1; /* Garante que o título fique acima das imagens */
+}
+
+@media screen and (max-width: 925px) { /* Ajuste conforme necessário */
+    .logo img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 720px) { /* Ajuste conforme necessário */
+    .logo img {
+        display: none; /* Esconde as imagens em telas menores que 600px de largura */
+    }
+    
+    .logo h1 {
+        font-size: 24px; /* Reduz o tamanho do título em telas menores */
+        text-align: center; /* Centraliza o título */
+    }
+} 
+
+.book-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Espaçamento entre os livros */
+    flex-wrap: wrap;
+}
+
+.book-gallery figure {
+    width: 150px;
+    text-align: center; /* Centraliza o conteúdo */
+    margin-bottom: 2rem; /* Distância entre cada livro */
+    transition: transform 0.3s;
+}
+
+.book-gallery figure:hover {
+    transform: scale(1.1);
+}
+
+.book-gallery img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.book-gallery figcaption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+@media screen and (max-width: 720px) {
+    .book-gallery figure {
+        width: 100%; /* Para ocupar toda a largura em telas menores */
+    }
+}

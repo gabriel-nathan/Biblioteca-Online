@@ -1,0 +1,113 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Fredoka, sans-serif;
+    line-height: 1.6;
+    background-color: #e9fddb;
+    color: #333;
+}
+
+header {
+    background: #175c5c;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+#pesquisa {
+    margin-bottom: 2rem;
+}
+
+#pesquisa form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#pesquisa input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+}
+
+#pesquisa button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #175c5c;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#pesquisa button:hover {
+    background-color: #f6ed3f;
+    color: black;
+}
+
+#pesquisa table {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 1rem;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pesquisa th,
+#pesquisa td {
+    border: 1px solid #ccc;
+    padding: 12px;
+}
+
+#pesquisa th {
+    background-color: #175c5c;
+    color: #fff;
+    font-weight: bold;
+}
+
+#pesquisa tr:nth-child(even) {
+    background-color: #ffffff; /* Cor de fundo alternada para linhas pares */
+}
+
+#pesquisa tr:hover {
+    background-color: #fcf8b5e5; /* Realce ao passar o mouse */
+}
+
+footer {
+    background: #175c5c;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
